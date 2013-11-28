@@ -2,7 +2,7 @@
 
 Plugin Name: MFP mod WP
 Description: Cleaning head of unnecessary references to feed, manifest, wp generator, etc. Deleting comments in the source code on the fly. Removing logos and links in wp-admin panel. 
-Version: 0.1 Beta
+Version: 0.2
 Author: Sergey Voloshin
 Author URI: http://varrcan.me/
 Plugin URI: http://varrcan.me/
