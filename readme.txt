@@ -32,18 +32,17 @@ Attention! Some options may cause unstable operation of your blog. If its so, th
 
 == Changelog ==
 
-= v0.1 (25.11.2013) =
-* Start
-
 = v0.2 (28.11.2013) =
 * Updated translation
 * Fix readme.txt
 
+= v0.1 (25.11.2013) =
+* Start
 
 == Upgrade notice ==
 
-* v0.1 Beta version
 * v0.2 Updated translation En, Ru
+* v0.1 Beta version
 
 == Arbitrary section 1 ==
 
