@@ -12,9 +12,9 @@ Cleaning head of references to feed, manifest, wp generator, etc. Deleting comme
 
 == Description ==
 
-Plugin MFP mod WP has two main functions: cleans your source code from the links that can slow down his work. and hides with the admin some items in particular version of the engine, links to wordpress.org etc.
-Currently plugin under development, but its capabilities are constantly expanding.
-Attention! Some options may cause astable work of your blog. In this case, disable it, or refrain from using this plugin if you are unsure what is. The plugin itself does not modify your files.
+Plugin MFP mod WP does two main functions:  clean your source code from links, which can to slow down your blog and hides some articles such as version of the engine, links to wordpress.org etc. from the admintool.
+The plugin is developed now, but opportunities of the plugin are constantly expanding.
+Attention! Some options may cause unstable operation of your blog. If it’s so, then turn off the option or don’t use the plugin, if you do not sure. The plugin don't change your files, if it will be deactivated, that all settings will be reset.
 
 == Installation ==
 
@@ -32,8 +32,13 @@ Attention! Some options may cause astable work of your blog. In this case, disab
 
 == Changelog ==
 
-0.1
+0.1 Start
+0.2 Updated translation
 
 == Upgrade notice ==
 
 0.1 Beta version
+0.2 Updated translation En, Ru
+
+== Arbitrary section 1 ==
+
