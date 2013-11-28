@@ -35,7 +35,7 @@ Attention! Some options may cause unstable operation of your blog. If its so, th
 = v0.1 (25.11.2013) =
 * Start
 
-= v0.2 (25.11.2013) =
+= v0.2 (28.11.2013) =
 * Updated translation
 * Fix readme.txt
 
