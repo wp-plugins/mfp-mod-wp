@@ -3,7 +3,7 @@ Contributors: Varrcan
 Donate link: http://varrcan.me
 Tags: cleans source code, hides some items, removing comments, removing menu help, removing widgets, logo on the login
 Requires at least: 3.3
-Tested up to: 3.7.1
+Tested up to: 3.8
 Stable tag: trunc
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -32,10 +32,6 @@ Attention! Some options may cause unstable operation of your blog. If its so, th
 
 == Changelog ==
 
-= v0.4 (28.12.2013) =
-* Updated translation
-* Fix readme.txt
-
 = v0.3 (28.12.2013) =
 * Updated translation
 * Fix readme.txt
@@ -49,6 +45,7 @@ Attention! Some options may cause unstable operation of your blog. If its so, th
 
 == Upgrade notice ==
 
+* v0.3 Updated translation En, Ru
 * v0.2 Updated translation En, Ru
 * v0.1 Beta version
 
