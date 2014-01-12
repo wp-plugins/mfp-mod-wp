@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MFP mod WP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-28 22:36+0200\n"
+"POT-Creation-Date: 2013-12-28 00:26+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Varrcan <admin@xsence.net>\n"
 "Language-Team: Varrcan\n"
@@ -13,19 +13,19 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: .\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.3\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../mfp-mod-wp.php:273
+#: ../view.php:2
 msgid "Configuration MFP mod WP"
 msgstr "Настройки MFP mod WP"
 
-#: ../mfp-mod-wp.php:278
+#: ../view.php:7
 msgid "About the plugin"
 msgstr "О плагине"
 
-#: ../mfp-mod-wp.php:282
+#: ../view.php:11
 msgid ""
 "Plugin MFP mod WP does two main functions:  clean your source code from "
 "links, which can to slow down your blog and hides some articles such as "
@@ -35,7 +35,7 @@ msgstr ""
 "ссылок, которые могут замедлять работу блога и скрывает с админки некоторые "
 "пункты, в частности, версию движка, ссылки на wordpress.org и т.д."
 
-#: ../mfp-mod-wp.php:283
+#: ../view.php:12
 msgid ""
 "The plugin is developed now, but opportunities of the plugin are constantly "
 "expanding.."
@@ -43,7 +43,7 @@ msgstr ""
 "В данный момент плагин на стадии разработки, но его возможности постоянно "
 "расширяются. "
 
-#: ../mfp-mod-wp.php:284
+#: ../view.php:13
 msgid ""
 "<em>Attention!</em> Some options may cause unstable operation of your blog. "
 "If it’s so, then turn off the option or don’t use the plugin, if you do not "
@@ -55,15 +55,15 @@ msgstr ""
 "данного плагина, если вы в чем-то не уверены. Сам плагин физически не "
 "изменяет ваши файлы, после деактивации все настройки будут сброшены."
 
-#: ../mfp-mod-wp.php:303
+#: ../view.php:32
 msgid "Settings removal"
 msgstr "Настройки удаления"
 
-#: ../mfp-mod-wp.php:307
+#: ../view.php:36
 msgid "Removing bad code in the header:"
 msgstr "Удаление мусора в header"
 
-#: ../mfp-mod-wp.php:308
+#: ../view.php:37
 msgid ""
 "<em>Removes wp_head links: </em> feed, rsd, wlwmanifest, index_rel, "
 "parent_post_rel, start_post_rel, adjacent_posts_rel, wp_shortlink and "
@@ -73,21 +73,21 @@ msgstr ""
 "parent_post_rel, start_post_rel, adjacent_posts_rel, wp_shortlink и "
 "wp_generator."
 
-#: ../mfp-mod-wp.php:313 ../mfp-mod-wp.php:325 ../mfp-mod-wp.php:336
-#: ../mfp-mod-wp.php:347 ../mfp-mod-wp.php:358 ../mfp-mod-wp.php:369
+#: ../view.php:42 ../view.php:54 ../view.php:65 ../view.php:76 ../view.php:87
+#: ../view.php:98
 msgid "Enable"
 msgstr "Включено"
 
-#: ../mfp-mod-wp.php:314 ../mfp-mod-wp.php:326 ../mfp-mod-wp.php:337
-#: ../mfp-mod-wp.php:348 ../mfp-mod-wp.php:359 ../mfp-mod-wp.php:370
+#: ../view.php:43 ../view.php:55 ../view.php:66 ../view.php:77 ../view.php:88
+#: ../view.php:99
 msgid "Disable"
 msgstr "Отключено"
 
-#: ../mfp-mod-wp.php:319
+#: ../view.php:48
 msgid "Removing comments from the code:"
 msgstr "Удаление комментариев с кода:"
 
-#: ../mfp-mod-wp.php:320
+#: ../view.php:49
 msgid ""
 "Removes comments html <br /> (type &lt;-- comment --&gt; ) with the source "
 "code. Does not alter any files!"
@@ -95,36 +95,36 @@ msgstr ""
 "Удаляет на лету комментарии html <br />(вида &lt;-- comment --&gt; ) с "
 "исходного кода. Не изменяет ваши файлы!"
 
-#: ../mfp-mod-wp.php:331
+#: ../view.php:60
 msgid "Removing the shortcut menu help:"
 msgstr "Удаление контекстного меню справки:"
 
-#: ../mfp-mod-wp.php:332
+#: ../view.php:61
 msgid "Hides in the admin panel context menu reference."
 msgstr "Скрывает в панели администратора контекстное меню справки."
 
-#: ../mfp-mod-wp.php:342
+#: ../view.php:71
 msgid "Removing the logo and links in wp admin panel:"
 msgstr "Удаление лого и ссылок в панели админа:"
 
-#: ../mfp-mod-wp.php:343
+#: ../view.php:72
 msgid "Removing the logo and links to wordpress.org with admin panel."
 msgstr "Удаление логотипа и ссылок на wordpress.org с панели администратора."
 
-#: ../mfp-mod-wp.php:353
+#: ../view.php:82
 msgid "Removing WP version of the block \"right now\":"
 msgstr "Удаление версии WP из блока \"Прямо сейчас\":"
 
-#: ../mfp-mod-wp.php:354
+#: ../view.php:83
 msgid "On the \"Console\" removes wordpress version in block \"right now\"."
 msgstr ""
 "На странице \"Консоль\" удаляет версию wordpress из блока \"Прямо сейчас\"."
 
-#: ../mfp-mod-wp.php:364
+#: ../view.php:93
 msgid "Removing unnecessary widgets in the console:"
-msgstr "Удаление мусора в header"
+msgstr "Удаление виджетов в консоли"
 
-#: ../mfp-mod-wp.php:365
+#: ../view.php:94
 msgid ""
 "Removes widgets: inbound links, the panel \"Welcome\", \"Blog WordPress\", "
 "\"News WordPress\", widget plugins.."
@@ -132,33 +132,39 @@ msgstr ""
 "Удаляет виджеты: входящие ссылки, панель \"Добро пожаловать\", \"Блог "
 "WordPress\", \"Новости WordPress \", виджет плагинов."
 
-#: ../mfp-mod-wp.php:378
+#: ../view.php:107
 msgid "Text in footer admin panel:"
 msgstr "Текст в футере админ панели"
 
-#: ../mfp-mod-wp.php:381 ../mfp-mod-wp.php:399
+#: ../view.php:110 ../view.php:128
 msgid "On"
 msgstr "Включить"
 
-#: ../mfp-mod-wp.php:383 ../mfp-mod-wp.php:401
+#: ../view.php:112 ../view.php:130
 msgid "Off"
 msgstr "Выключить"
 
-#: ../mfp-mod-wp.php:395
+#: ../view.php:124
 msgid "Upload your logo on the login page"
 msgstr "Свой логотип при входе в админку"
 
-#: ../mfp-mod-wp.php:398
-msgid "Image size should not exceed 274px × 100px"
-msgstr "Размер изображения не должен превышать 274px × 100px"
+#: ../view.php:127
+msgid "Image size should not exceed 64px × 64px"
+msgstr "Размер изображения не должен превышать 64px × 64px"
 
-#: ../mfp-mod-wp.php:406
+#: ../view.php:135
 msgid "Upload"
 msgstr "Загрузить"
 
-#: ../mfp-mod-wp.php:410
+#: ../view.php:139
 msgid "Save Configuration"
 msgstr "Сохранить"
+
+#~ msgid "Disabling the admin panel:"
+#~ msgstr "Отключение админ-панели"
+
+#~ msgid "Disabling the admin panel for authorized users"
+#~ msgstr "Отключение админ-панели для авторизированных пользователей"
 
 #~ msgid "Mini FAQ"
 #~ msgstr "Помощь"

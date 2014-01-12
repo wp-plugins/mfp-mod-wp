@@ -32,6 +32,14 @@ Attention! Some options may cause unstable operation of your blog. If its so, th
 
 == Changelog ==
 
+= v0.4 (28.12.2013) =
+* Updated translation
+* Fix readme.txt
+
+= v0.3 (28.12.2013) =
+* Updated translation
+* Fix readme.txt
+
 = v0.2 (28.11.2013) =
 * Updated translation
 * Fix readme.txt
