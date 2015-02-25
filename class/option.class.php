@@ -312,7 +312,7 @@ class mainMfp{
 			//add_action('login_message', array(&$this, 'custom_login_form')); // Сообщение над формой
 			//add_action('login_footer', array(&$this, 'custom_login_footer')); // Футтер
 			//add_filter('login_headerurl', function(){ return get_home_url();}); // Смена ссылки с wordpress.org на главную сайта
-			add_filter('login_headertitle', function(){ return false;}); // Удаление title логотипа
+			//add_filter('login_headertitle', function(){ return false;}); // Удаление title логотипа
 		}
   }
 }
