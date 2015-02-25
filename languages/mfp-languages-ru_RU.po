@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MFP mod WP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-28 00:26+0200\n"
+"POT-Creation-Date: 2015-02-26 01:15+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Varrcan <admin@xsence.net>\n"
 "Language-Team: Varrcan\n"
@@ -13,152 +13,322 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: .\n"
-"X-Generator: Poedit 1.6.3\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../view.php:2
+#: ../view.php:65
 msgid "Configuration MFP mod WP"
 msgstr "Настройки MFP mod WP"
 
-#: ../view.php:7
+#: ../view.php:71
 msgid "About the plugin"
 msgstr "О плагине"
 
-#: ../view.php:11
+#: ../view.php:74
 msgid ""
-"Plugin MFP mod WP does two main functions:  clean your source code from "
-"links, which can to slow down your blog and hides some articles such as "
-"version of the engine, links to wordpress.org etc. from the admintool."
+"Plugin MFP mod WP does two main functions:  clean your source code from\n"
+"                         links, which can to slow down your blog and hides "
+"some articles such as\n"
+"                         version of the engine, links to wordpress.org etc. "
+"from the admintool."
 msgstr ""
-"Плагин MFP мод WP выполняет две основные функции: чистит ваш исходный код от "
-"ссылок, которые могут замедлять работу блога и скрывает с админки некоторые "
-"пункты, в частности, версию движка, ссылки на wordpress.org и т.д."
+"Плагин MFP мод WP чистит ваш исходный код от ссылок, которые могут замедлить "
+"работу блога, скрывает с админки некоторые пункты, в частности, версию "
+"движка, ссылки на wordpress.org и т.д. Позволяет добавить в Консоль свой "
+"виджет, изменить текст в футере админ панели, изменить фоновое изображение и "
+"логотип страницы входа. Автоматически переводит в транскрипт имена "
+"загружаемых файлов, ссылок на новые записи и страницы. "
 
-#: ../view.php:12
+#: ../view.php:78
 msgid ""
-"The plugin is developed now, but opportunities of the plugin are constantly "
-"expanding.."
-msgstr ""
-"В данный момент плагин на стадии разработки, но его возможности постоянно "
-"расширяются. "
+"The plugin is developed now, but opportunities of the plugin are\n"
+"                         constantly expanding.."
+msgstr "Возможности плагина постоянно расширяются"
 
-#: ../view.php:13
+#: ../view.php:80
 msgid ""
-"<em>Attention!</em> Some options may cause unstable operation of your blog. "
-"If it’s so, then turn off the option or don’t use the plugin, if you do not "
-"sure. The plugin do not change your files, if it will be deactivated, that "
-"all settings will be reset."
+"<em>Attention!</em> Some options may cause unstable operation of your\n"
+"                         blog. If it’s so, then turn off the option or don’t "
+"use the plugin,\n"
+"                         if you do not sure. The plugin do not change your "
+"files, if it will be\n"
+"                         deactivated, that all settings will be reset."
 msgstr ""
 "<em>Внимание!</em> Некоторые опции могут вызвать нестабильную работу вашего "
 "блога. В этом случае отключите опцию, либо откажитесь от использования "
 "данного плагина, если вы в чем-то не уверены. Сам плагин физически не "
-"изменяет ваши файлы, после деактивации все настройки будут сброшены."
+"изменяет ваши файлы, после деактивации все настройки будут сброшены. "
 
-#: ../view.php:32
+#: ../view.php:87
+msgid "Reset all settings"
+msgstr "Сбросить все настройки"
+
+#: ../view.php:103
 msgid "Settings removal"
 msgstr "Настройки удаления"
 
-#: ../view.php:36
-msgid "Removing bad code in the header:"
-msgstr "Удаление мусора в header"
-
-#: ../view.php:37
-msgid ""
-"<em>Removes wp_head links: </em> feed, rsd, wlwmanifest, index_rel, "
-"parent_post_rel, start_post_rel, adjacent_posts_rel, wp_shortlink and "
-"wp_generator."
-msgstr ""
-"<em>Удаляет из wp_head ссылки:</em> feed, rsd, wlwmanifest, index_rel, "
-"parent_post_rel, start_post_rel, adjacent_posts_rel, wp_shortlink и "
-"wp_generator."
-
-#: ../view.php:42 ../view.php:54 ../view.php:65 ../view.php:76 ../view.php:87
-#: ../view.php:98
-msgid "Enable"
-msgstr "Включено"
-
-#: ../view.php:43 ../view.php:55 ../view.php:66 ../view.php:77 ../view.php:88
-#: ../view.php:99
-msgid "Disable"
-msgstr "Отключено"
-
-#: ../view.php:48
+#: ../view.php:106
 msgid "Removing comments from the code:"
 msgstr "Удаление комментариев с кода:"
 
-#: ../view.php:49
+#: ../view.php:107
 msgid ""
-"Removes comments html <br /> (type &lt;-- comment --&gt; ) with the source "
-"code. Does not alter any files!"
+"Removes comments html <br /> (type &lt;-- comment --&gt; )\n"
+"                                             with the source code. Does not "
+"alter any files!"
 msgstr ""
 "Удаляет на лету комментарии html <br />(вида &lt;-- comment --&gt; ) с "
-"исходного кода. Не изменяет ваши файлы!"
+"исходного кода. Не изменяет ваши файлы! "
 
-#: ../view.php:60
+#: ../view.php:116
+msgid "Hide WordPress version in JavaScript and CSS:"
+msgstr "Скрыть версию WordPress в окончании файлов JavaScript and CSS:"
+
+#: ../view.php:117
+msgid "Hides WordPress version with source code"
+msgstr "Скрыть версию WordPress в исходном коде"
+
+#: ../view.php:125
 msgid "Removing the shortcut menu help:"
 msgstr "Удаление контекстного меню справки:"
 
-#: ../view.php:61
+#: ../view.php:126
 msgid "Hides in the admin panel context menu reference."
 msgstr "Скрывает в панели администратора контекстное меню справки."
 
-#: ../view.php:71
+#: ../view.php:134
 msgid "Removing the logo and links in wp admin panel:"
 msgstr "Удаление лого и ссылок в панели админа:"
 
-#: ../view.php:72
+#: ../view.php:135
 msgid "Removing the logo and links to wordpress.org with admin panel."
 msgstr "Удаление логотипа и ссылок на wordpress.org с панели администратора."
 
-#: ../view.php:82
-msgid "Removing WP version of the block \"right now\":"
-msgstr "Удаление версии WP из блока \"Прямо сейчас\":"
+#: ../view.php:145
+msgid "Removing links from wp_head, slowing the work site"
+msgstr "Удаление ссылок с wp_head, замедляющих работу сайта"
 
-#: ../view.php:83
-msgid "On the \"Console\" removes wordpress version in block \"right now\"."
-msgstr ""
-"На странице \"Консоль\" удаляет версию wordpress из блока \"Прямо сейчас\"."
+#: ../view.php:149
+msgid "Removing rss, rds:"
+msgstr "Удалить rss, rds:"
 
-#: ../view.php:93
-msgid "Removing unnecessary widgets in the console:"
-msgstr "Удаление виджетов в консоли"
+#: ../view.php:150
+msgid "Links to rss, atom, trackbacks"
+msgstr "Ссылки на rss, atom, trackbacks"
 
-#: ../view.php:94
+#: ../view.php:158
+msgid "Removing wlwmanifest:"
+msgstr "Удалить wlwmanifest:"
+
+#: ../view.php:159
+msgid "Link to editor Windows Live Writer"
+msgstr "Ссылка на редактор Windows Live Writer"
+
+#: ../view.php:167
+msgid "Removing relink pages:"
+msgstr "Удалить перелинковку страниц, создающих проблемы СЕО:"
+
+#: ../view.php:168
 msgid ""
-"Removes widgets: inbound links, the panel \"Welcome\", \"Blog WordPress\", "
-"\"News WordPress\", widget plugins.."
+"index_rel_link, parent_post_rel_link,\n"
+"                                               start_post_rel_link, "
+"adjacent_posts_rel_link"
 msgstr ""
-"Удаляет виджеты: входящие ссылки, панель \"Добро пожаловать\", \"Блог "
-"WordPress\", \"Новости WordPress \", виджет плагинов."
+"index_rel_link, parent_post_rel_link,\n"
+"start_post_rel_link, adjacent_posts_rel_link"
 
-#: ../view.php:107
+#: ../view.php:177
+msgid "Removing wp_shortlink:"
+msgstr "Удалить wp_shortlink:"
+
+#: ../view.php:178
+msgid "Removes duplicates links site.ru/?p=111"
+msgstr "Удалить дубли ссылок вида site.ru/?p=111"
+
+#: ../view.php:186
+msgid "Removing wp_generator:"
+msgstr "Удалить wp_generator:"
+
+#: ../view.php:187
+msgid "Removes WordPress version of html code"
+msgstr "Удаление строки c версией WordPress"
+
+#: ../view.php:197
+msgid "Removing widgets in the console"
+msgstr "Удаление виджетов в консоли "
+
+#: ../view.php:200
+msgid "Remove widget Quick Press:"
+msgstr "Удалить виджет Быстрый черновик:"
+
+#: ../view.php:201
+msgid "dashboard_quick_press"
+msgstr "dashboard_quick_press"
+
+#: ../view.php:209
+msgid "Remove widget Activity:"
+msgstr "Удалить виджет Активность:"
+
+#: ../view.php:210
+msgid "dashboard_activity"
+msgstr "dashboard_activity"
+
+#: ../view.php:218
+msgid "Remove widget Right now:"
+msgstr "Удалить виджет На виду:"
+
+#: ../view.php:219
+msgid "dashboard_right_now"
+msgstr "dashboard_right_now"
+
+#: ../view.php:227
+msgid "Remove widget News Wordpress:"
+msgstr "Удалить виджет Новости Wordpress:"
+
+#: ../view.php:228
+msgid "dashboard_primary dashboard_secondary"
+msgstr "dashboard_primary dashboard_secondary"
+
+#: ../view.php:236
+msgid "Remove widget Welcome:"
+msgstr "Удалить виджет Добро пожаловать:"
+
+#: ../view.php:237
+msgid "welcome_panel"
+msgstr "welcome_panel"
+
+#: ../view.php:248
+msgid "Transliteration while downloading the file, create a new record or page"
+msgstr "Транслитерация при загрузке файла, создания новой записи или страницы"
+
+#: ../view.php:252
+msgid "Enable transliteration:"
+msgstr "Включить транслитерацию:"
+
+#: ../view.php:253
+msgid ""
+"When you create a new entry link will\n"
+"                                                automatically transferred to "
+"the transliteration.\n"
+"                                                There will also be "
+"translated Cyrillic names of uploaded files."
+msgstr ""
+"Когда вы создаете новую запись, ссылка будет\n"
+"автоматически переведена в транслит.\n"
+"Также будут переведены кириллические имена загружаемых файлов."
+
+#: ../view.php:266
 msgid "Text in footer admin panel:"
 msgstr "Текст в футере админ панели"
 
-#: ../view.php:110 ../view.php:128
-msgid "On"
-msgstr "Включить"
+#: ../view.php:269
+msgid "Enable display text:"
+msgstr "Включить отображения текста:"
 
-#: ../view.php:112 ../view.php:130
-msgid "Off"
-msgstr "Выключить"
+#: ../view.php:270
+msgid "Enter the text link and the title links "
+msgstr "Введите текст, ссылку и название ссылки"
 
-#: ../view.php:124
-msgid "Upload your logo on the login page"
-msgstr "Свой логотип при входе в админку"
+#: ../view.php:287
+msgid "Metaboxes Console"
+msgstr "Метабокс в Консоли"
 
-#: ../view.php:127
-msgid "Image size should not exceed 64px × 64px"
-msgstr "Размер изображения не должен превышать 64px × 64px"
+#: ../view.php:291
+msgid "Enable Metaboxes:"
+msgstr "Включить метабокс"
 
-#: ../view.php:135
-msgid "Upload"
-msgstr "Загрузить"
+#: ../view.php:292
+msgid "Adding a metaboxes (widget)<br/> to the Console"
+msgstr "Добавление метабокса (виджета) в Консоль"
 
-#: ../view.php:139
+#: ../view.php:299
+msgid "Title widget"
+msgstr "Заголовок виджета"
+
+#: ../view.php:303
+msgid "The main text of the widget"
+msgstr "Основной текст виджета"
+
+#: ../view.php:310
+msgid "Changing the appearance of the login page"
+msgstr "Изменение внешнего вида страницы входа"
+
+#: ../view.php:314
+msgid "Make beautiful:"
+msgstr "Сделать красиво:"
+
+#: ../view.php:323
+msgid "background image"
+msgstr "фоновое изображения"
+
+#: ../view.php:326
+msgid "Select background"
+msgstr "Выбрать фон"
+
+#: ../view.php:330
+msgid "logo"
+msgstr "логотип"
+
+#: ../view.php:333
+msgid "Select logo"
+msgstr "Выбрать логотип"
+
+#: ../view.php:340
 msgid "Save Configuration"
-msgstr "Сохранить"
+msgstr "Сохранить настройки"
+
+#: ../class/option.class.php:93 ../class/option.class.php:98
+msgid "Settings"
+msgstr "Настройки удаления "
+
+#~ msgid "Removing bad code in the header:"
+#~ msgstr "Удаление мусора в header"
+
+#~ msgid ""
+#~ "<em>Removes wp_head links: </em> feed, rsd, wlwmanifest, index_rel, "
+#~ "parent_post_rel, start_post_rel, adjacent_posts_rel, wp_shortlink and "
+#~ "wp_generator."
+#~ msgstr ""
+#~ "<em>Удаляет из wp_head ссылки:</em> feed, rsd, wlwmanifest, index_rel, "
+#~ "parent_post_rel, start_post_rel, adjacent_posts_rel, wp_shortlink и "
+#~ "wp_generator."
+
+#~ msgid "Enable"
+#~ msgstr "Включено"
+
+#~ msgid "Disable"
+#~ msgstr "Отключено"
+
+#~ msgid "Removing WP version of the block \"right now\":"
+#~ msgstr "Удаление версии WP из блока \"Прямо сейчас\":"
+
+#~ msgid "On the \"Console\" removes wordpress version in block \"right now\"."
+#~ msgstr ""
+#~ "На странице \"Консоль\" удаляет версию wordpress из блока \"Прямо сейчас"
+#~ "\"."
+
+#~ msgid ""
+#~ "Removes widgets: inbound links, the panel \"Welcome\", \"Blog WordPress"
+#~ "\", \"News WordPress\", widget plugins.."
+#~ msgstr ""
+#~ "Удаляет виджеты: входящие ссылки, панель \"Добро пожаловать\", \"Блог "
+#~ "WordPress\", \"Новости WordPress \", виджет плагинов."
+
+#~ msgid "On"
+#~ msgstr "Включить"
+
+#~ msgid "Off"
+#~ msgstr "Выключить"
+
+#~ msgid "Upload your logo on the login page"
+#~ msgstr "Свой логотип при входе в админку"
+
+#~ msgid "Image size should not exceed 64px × 64px"
+#~ msgstr "Размер изображения не должен превышать 64px × 64px"
+
+#~ msgid "Upload"
+#~ msgstr "Загрузить"
 
 #~ msgid "Disabling the admin panel:"
 #~ msgstr "Отключение админ-панели"
