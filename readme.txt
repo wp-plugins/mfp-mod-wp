@@ -27,8 +27,10 @@ Attention! Some options may cause unstable operation of your blog. If its so, th
 
 == Screenshots ==
 
-1. 
-2. 
+1. Plugin settings
+2. Plugin settings
+3. Plugin settings
+4. Plugin settings
 
 == Changelog ==
 
