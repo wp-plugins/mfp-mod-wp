@@ -16,6 +16,14 @@ Plugin MFP mod WP does two main functions:  clean your source code from links, w
 The plugin is developed now, but opportunities of the plugin are constantly expanding.
 Attention! Some options may cause unstable operation of your blog. If its so, then turn off the option or do not use the plugin, if you do not sure. The plugin don't change your files, if it will be deactivated, that all settings will be reset.
 
+-----------------------------------
+
+Плагин MFP мод WP чистит ваш исходный код от ссылок, которые могут замедлить работу блога, скрывает с админки некоторые пункты, в частности, версию движка, ссылки на wordpress.org и т.д. Позволяет добавить в Консоль свой виджет, изменить текст в футере админ панели, изменить фоновое изображение и логотип страницы входа. Автоматически переводит в транскрипт имена загружаемых файлов, ссылок на новые записи и страницы.
+
+Возможности плагина постоянно расширяются
+
+Внимание! Некоторые опции могут вызвать нестабильную работу вашего блога. В этом случае отключите опцию, либо откажитесь от использования данного плагина, если вы в чем-то не уверены. Сам плагин физически не изменяет ваши файлы, после деактивации все настройки будут сброшены. 
+
 == Installation ==
 
 1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
@@ -33,6 +41,10 @@ Attention! Some options may cause unstable operation of your blog. If its so, th
 4. Plugin settings
 
 == Changelog ==
+
+= v0.3.3 (27.02.2015) =
+* Fix small bugs
+* Fix readme.txt
 
 = v0.3.2 (26.02.2015) =
 * Add new mod
@@ -53,6 +65,7 @@ Attention! Some options may cause unstable operation of your blog. If its so, th
 
 == Upgrade notice ==
 
+* v0.3.3 Fix small bugs
 * v0.3.2 Full Updated
 * v0.3 Updated translation En, Ru
 * v0.2 Updated translation En, Ru

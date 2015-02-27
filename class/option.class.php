@@ -11,12 +11,49 @@ class mainMfp{
   public $messages = array();
   
   public function __construct(){
-		$this->mfp_options = unserialize($this->mfpGetOptions());
-		
     if(get_option('mfp_version') == null){
       $this->delOldSetting();
+			$this->mfpReset();
       add_option('mfp_version', MFP_VERSION);
+			$mfp_options = array("mfp_mod_option_link" => array(
+																										 "rss" => "0",
+																										 "wlwmanifest" => "0",
+																										 "index_rel" => "0",
+																										 "wp_shortlink" => "0",
+																										 "wp_generator" => "0",
+																										), // Чистка head от мусора
+													"mfp_mod_option_comment" => "0", // Удаление комментариев html
+													"mfp_mod_option_version" => "0", // Удаление версии
+													"mfp_mod_option_wp_help" => "0", // Удаление контекстного меню справки
+													"mfp_mod_option_wp_del" => "0", // Удаление лого и ссылок wp в админке
+													"mfp_mod_option_wp_logo" => "0", // Свое лого при входе в админку
+													"mfp_mod_option_wp_widgets" => array(
+																										 "quick_press" => "0",
+																										 "activity" => "0",
+																										 "right_now" => "0",
+																										 "primary" => "0",
+																										 "welcome" => "0",
+																										), // Удаление виджетов
+													"mfp_mod_option_wp_translit" => "0", // Транслит
+													"mfp_mod_option_footer_text_opt" => "0", // Текст в футере
+													"mfp_mod_option_footer_text" => "Developed by", // Надпись в футере
+													"mfp_mod_option_footer_text1" => "https://varrcan.me/", // Ссылка в футере
+													"mfp_mod_option_footer_text2" => "Varrcan.ME", // Подпись к ссылке
+													"mfp_mod_option_metabox" => "0", // Метабокс
+													"mfp_mod_option_metabox_title" => "", // Заголовок Метабокса
+													"mfp_mod_option_metabox_text" => "", // Текст Метабокса
+													"mfp_mod_option_custom_admin" => "0" // Страница входа
+													);
+			$mfp_options = serialize($mfp_options);
+			// Добавление в БД значения по умолчанию
+			add_option("mfp_mod_options", "$mfp_options");
     }
+		
+		if(get_option('mfp_version') < MFP_VERSION){
+			update_option('mfp_version', MFP_VERSION);
+		}
+		
+		$this->mfp_options = unserialize($this->mfpGetOptions());
 		
 		$this->functionMFP(); // инициализация функций
     
@@ -311,8 +348,8 @@ class mainMfp{
 			add_action('login_enqueue_scripts', array(&$this, 'custom_login_css'), 100); // CSS
 			//add_action('login_message', array(&$this, 'custom_login_form')); // Сообщение над формой
 			//add_action('login_footer', array(&$this, 'custom_login_footer')); // Футтер
-			//add_filter('login_headerurl', function(){ return get_home_url();}); // Смена ссылки с wordpress.org на главную сайта
-			//add_filter('login_headertitle', function(){ return false;}); // Удаление title логотипа
+			add_filter('login_headerurl', create_function('', 'return get_home_url();')); // Смена ссылки с wordpress.org на главную сайта
+			add_filter('login_headertitle', create_function('', 'return false;')); // Удаление title логотипа
 		}
   }
 }

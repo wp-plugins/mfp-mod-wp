@@ -319,6 +319,8 @@ jQuery(document).ready(function($){
             <?php echo $this->mfp_options['mfp_mod_option_custom_admin'] == '1'?'checked="checked" ':''; ?>/>
         </div><br/>
         <div class="clearfloat">
+          <input class="button-secondary" value="X" type="button" title="Очистить"
+                 onclick="document.getElementById('image_url').value='';">
           <input type="text" name="mfp_image_url" id="image_url" class="regular-text"
                  placeholder="<?php echo __('background image', 'mfp-languages'); ?>"
                  value="<?php echo get_option('mfp_mod_image_url'); ?>"/>
@@ -326,6 +328,8 @@ jQuery(document).ready(function($){
                  value="<?php echo __('Select background', 'mfp-languages'); ?>" />
         </div>
         <div class="clearfloat">
+          <input class="button-secondary" value="X" type="button" title="Очистить"
+                 onclick="document.getElementById('logo_url').value='';">
           <input type="text" name="mfp_logo_url" id="logo_url" class="regular-text"
                  placeholder="<?php echo __('logo', 'mfp-languages'); ?>"
                  value="<?php echo get_option('mfp_mod_logo_url'); ?>"/>
