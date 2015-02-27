@@ -2,7 +2,7 @@
 
 Plugin Name: MFP mod WP
 Description: Plugin MFP mod WP does two main functions:  clean your source code from links, which can to slow down your blog and hides some articles such as version of the engine, links to wordpress.org etc. from the admintool.
-Version: 0.3.2
+Version: 0.3.3
 Author: Sergey Voloshin
 Author URI: https://varrcan.me/
 Plugin URI: https://varrcan.me/
