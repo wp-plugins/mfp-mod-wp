@@ -34,7 +34,7 @@ class mainMfp{
 																										 "primary" => "0",
 																										 "welcome" => "0",
 																										), // Удаление виджетов
-													"mfp_mod_option_wp_translit" => "0", // Транслит
+													"mfp_mod_option_translit" => "0", // Транслит
 													"mfp_mod_option_footer_text_opt" => "0", // Текст в футере
 													"mfp_mod_option_footer_text" => "Developed by", // Надпись в футере
 													"mfp_mod_option_footer_text1" => "https://varrcan.me/", // Ссылка в футере
@@ -57,10 +57,10 @@ class mainMfp{
 		
 		$this->functionMFP(); // инициализация функций
     
-    if (isset($_POST["save"])) { // обновить настройки
+    if (isset($_POST["mfp-save"])) { // обновить настройки
       $this->mfpSaveOptions();
     }
-		if (isset($_POST["reset"])) { // сбросить настройки
+		if (isset($_POST["mfp-reset"])) { // сбросить настройки
       $this->mfpReset();
     }
 		
@@ -144,33 +144,63 @@ class mainMfp{
     $options = get_option('mfp_mod_options');
     return $options;
   }
-  
+								
   /** Обновление настроек */
   public function mfpSaveOptions(){
-      $data = array("mfp_mod_option_link" => $_POST['mfp_out_link'],
-                    "mfp_mod_option_comment" => $_POST['mfp_out_comment'],
-										"mfp_mod_option_version" => $_POST['mfp_out_version'],
-                    "mfp_mod_option_wp_help" => $_POST['mfp_out_wp_help'],
-                    "mfp_mod_option_wp_del" => $_POST['mfp_out_wp_del'],
-										"mfp_mod_option_wp_logo" => $_POST['mfp_out_wp_logo'],
-                    "mfp_mod_option_wp_widgets" => $_POST['mfp_out_wp_widgets'],
-										"mfp_mod_option_translit" => $_POST['mfp_out_translit'],
-                    "mfp_mod_option_footer_text_opt" => $_POST['mfp_out_foo_text'],
-                    "mfp_mod_option_footer_text" => $_POST['mfp_out_footer_text'],
-                    "mfp_mod_option_footer_text1" => $_POST['mfp_out_footer_text1'],
-                    "mfp_mod_option_footer_text2" => $_POST['mfp_out_footer_text2'],
-										"mfp_mod_option_metabox" => $_POST['mfp_out_metabox'],
-										"mfp_mod_option_metabox_title" => $_POST['mfp_out_metabox_title'],
-										"mfp_mod_option_metabox_text" => $_POST['mfp_out_metabox_text'],
-										"mfp_mod_option_custom_admin" => $_POST['mfp_out_login']
-                    );
-      $data = serialize($data);
-			$image_url = $_POST['mfp_image_url'];
-			$logo_url = $_POST['mfp_logo_url'];
-				update_option('mfp_mod_image_url', $image_url);
-				update_option('mfp_mod_logo_url', $logo_url);
-        update_option('mfp_mod_options', $data);
-      $this->messages[] = 'Настройки успешно сохранены';
+		$data = array("mfp_mod_option_link" =>
+									array("rss" => (isset($_POST['mfp_out_link']['rss'])) ? $_POST['mfp_out_link']['rss'] : '0',
+												"wlwmanifest" => (isset($_POST['mfp_out_link']['wlwmanifest'])) ? $_POST['mfp_out_link']['wlwmanifest'] : '0',
+												"index_rel" => (isset($_POST['mfp_out_link']['index_rel'])) ? $_POST['mfp_out_link']['index_rel'] : '0',
+												"wp_shortlink" => (isset($_POST['mfp_out_link']['wp_shortlink'])) ? $_POST['mfp_out_link']['wp_shortlink'] : '0',
+												"wp_generator" => (isset($_POST['mfp_out_link']['wp_generator'])) ? $_POST['mfp_out_link']['wp_generator'] : '0',
+											 ),
+								"mfp_mod_option_comment" => (isset($_POST['mfp_out_comment'])) ? $_POST['mfp_out_comment'] : '0',
+								"mfp_mod_option_version" => (isset($_POST['mfp_out_version'])) ? $_POST['mfp_out_version'] : '0',
+								"mfp_mod_option_wp_help" => (isset($_POST['mfp_out_wp_help'])) ? $_POST['mfp_out_wp_help'] : '0',
+								"mfp_mod_option_wp_del" => (isset($_POST['mfp_out_wp_del'])) ? $_POST['mfp_out_wp_del'] : '0',
+								"mfp_mod_option_wp_logo" => (isset($_POST['mfp_out_wp_logo'])) ? $_POST['mfp_out_wp_logo'] : '0',
+								"mfp_mod_option_wp_widgets" =>
+								array(
+											"quick_press" => (isset($_POST['mfp_out_wp_widgets']['quick_press'])) ? $_POST['mfp_out_wp_widgets']['quick_press'] : '0',
+											"activity" => (isset($_POST['mfp_out_wp_widgets']['activity'])) ? $_POST['mfp_out_wp_widgets']['activity'] : '0',
+											"right_now" => (isset($_POST['mfp_out_wp_widgets']['right_now'])) ? $_POST['mfp_out_wp_widgets']['right_now'] : '0',
+											"primary" => (isset($_POST['mfp_out_wp_widgets']['primary'])) ? $_POST['mfp_out_wp_widgets']['primary'] : '0',
+											"welcome" => (isset($_POST['mfp_out_wp_widgets']['welcome'])) ? $_POST['mfp_out_wp_widgets']['welcome'] : '0',
+										 ),
+								"mfp_mod_option_translit" => (isset($_POST['mfp_out_translit'])) ? $_POST['mfp_out_translit'] : '0',
+								"mfp_mod_option_footer_text_opt" => (isset($_POST['mfp_out_foo_text'])) ? $_POST['mfp_out_foo_text'] : '0',
+								"mfp_mod_option_footer_text" => (isset($_POST['mfp_out_footer_text'])) ? $_POST['mfp_out_footer_text'] : '',
+								"mfp_mod_option_footer_text1" => (isset($_POST['mfp_out_footer_text1'])) ? $_POST['mfp_out_footer_text1'] : '',
+								"mfp_mod_option_footer_text2" => (isset($_POST['mfp_out_footer_text2'])) ? $_POST['mfp_out_footer_text2'] : '',
+								"mfp_mod_option_metabox" => (isset($_POST['mfp_out_metabox'])) ? $_POST['mfp_out_metabox'] : '0',
+								"mfp_mod_option_metabox_title" => (isset($_POST['mfp_out_metabox_title'])) ? $_POST['mfp_out_metabox_title'] : '',
+								"mfp_mod_option_metabox_text" => (isset($_POST['mfp_out_metabox_text'])) ? $_POST['mfp_out_metabox_text'] : '',
+								"mfp_mod_option_custom_admin" => (isset($_POST['mfp_out_login'])) ? $_POST['mfp_out_login'] : '0'
+								);
+		//$data = array("mfp_mod_option_link" => $_POST['mfp_out_link'],
+		//							"mfp_mod_option_comment" => $_POST['mfp_out_comment'],
+		//							"mfp_mod_option_version" => $_POST['mfp_out_version'],
+		//							"mfp_mod_option_wp_help" => $_POST['mfp_out_wp_help'],
+		//							"mfp_mod_option_wp_del" => $_POST['mfp_out_wp_del'],
+		//							"mfp_mod_option_wp_logo" => $_POST['mfp_out_wp_logo'],
+		//							"mfp_mod_option_wp_widgets" => $_POST['mfp_out_wp_widgets'],
+		//							"mfp_mod_option_translit" => $_POST['mfp_out_translit'],
+		//							"mfp_mod_option_footer_text_opt" => $_POST['mfp_out_foo_text'],
+		//							"mfp_mod_option_footer_text" => $_POST['mfp_out_footer_text'],
+		//							"mfp_mod_option_footer_text1" => $_POST['mfp_out_footer_text1'],
+		//							"mfp_mod_option_footer_text2" => $_POST['mfp_out_footer_text2'],
+		//							"mfp_mod_option_metabox" => $_POST['mfp_out_metabox'],
+		//							"mfp_mod_option_metabox_title" => $_POST['mfp_out_metabox_title'],
+		//							"mfp_mod_option_metabox_text" => $_POST['mfp_out_metabox_text'],
+		//							"mfp_mod_option_custom_admin" => $_POST['mfp_out_login']
+		//							);
+		$data = serialize($data);
+		$image_url = (isset($_POST['mfp_image_url'])) ? $_POST['mfp_image_url'] : '';
+		$logo_url = (isset($_POST['mfp_logo_url'])) ? $_POST['mfp_logo_url'] : '';
+			update_option('mfp_mod_image_url', $image_url);
+			update_option('mfp_mod_logo_url', $logo_url);
+			update_option('mfp_mod_options', $data);
+		$this->messages[] = 'Настройки успешно сохранены';
   }
 	
 	/** Удаление версии в окончании файлов */

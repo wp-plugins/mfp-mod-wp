@@ -2,7 +2,7 @@
 
 Plugin Name: MFP mod WP
 Description: Plugin MFP mod WP does two main functions:  clean your source code from links, which can to slow down your blog and hides some articles such as version of the engine, links to wordpress.org etc. from the admintool.
-Version: 0.3.3
+Version: 0.3.4
 Author: Sergey Voloshin
 Author URI: https://varrcan.me/
 Plugin URI: https://varrcan.me/
@@ -23,7 +23,7 @@ if(!defined('ABSPATH')) exit;
 
 define('MFP_MOD_WP_DIR', plugin_dir_path(__FILE__));
 define('MFP_MOD_WP_URL', plugin_dir_url(__FILE__));
-define('MFP_VERSION', '0.3.3');
+define('MFP_VERSION', '0.3.4');
 
 if(function_exists('load_plugin_textdomain')) load_plugin_textdomain('mfp-languages', PLUGINDIR.'/'.dirname(plugin_basename
 		(__FILE__)).'/languages', dirname(plugin_basename(__FILE__)).'/languages');
@@ -57,7 +57,7 @@ function mfp_mod_wp_activation() {
 																									 "primary" => "0",
 																									 "welcome" => "0",
 																									), // Удаление виджетов
-												"mfp_mod_option_wp_translit" => "0", // Транслит
+												"mfp_mod_option_translit" => "0", // Транслит
 												"mfp_mod_option_footer_text_opt" => "0", // Текст в футере
 												"mfp_mod_option_footer_text" => "Developed by", // Надпись в футере
 												"mfp_mod_option_footer_text1" => "https://varrcan.me/", // Ссылка в футере

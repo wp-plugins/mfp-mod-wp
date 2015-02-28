@@ -42,6 +42,10 @@ Attention! Some options may cause unstable operation of your blog. If its so, th
 
 == Changelog ==
 
+= v0.3.4 (01.03.2015) =
+* bug fix reset the settings plugin
+* Fix readme.txt
+
 = v0.3.3 (27.02.2015) =
 * Fix small bugs
 * Fix readme.txt
@@ -65,6 +69,7 @@ Attention! Some options may cause unstable operation of your blog. If its so, th
 
 == Upgrade notice ==
 
+* v0.3.4 Fix bugs
 * v0.3.3 Fix small bugs
 * v0.3.2 Full Updated
 * v0.3 Updated translation En, Ru

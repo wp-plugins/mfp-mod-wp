@@ -25,7 +25,7 @@ $notice=ob_get_clean();
 
 $this->mfp_options = unserialize($this->mfpGetOptions());
 
-
+//echo __FILE__.' @ '.__LINE__.'<pre>'.print_r($this->mfp_options,true).'</pre>';
 ?>
 
 <script type="text/javascript">
@@ -83,7 +83,7 @@ jQuery(document).ready(function($){
                          deactivated, that all settings will be reset.', 'mfp-languages'); ?></p>
       </div>
     </div>
-    <input type="submit" class="btn btn-danger" name="reset"
+    <input type="submit" class="btn btn-danger" name="mfp-reset"
            value="<?php echo __('Reset all settings', 'mfp-languages'); ?>" />
     <!--
     <div class="postbox">
@@ -340,7 +340,7 @@ jQuery(document).ready(function($){
     </div>
   </div>
   
-    <input type="submit" class="btn btn-success" name="save"
+    <input type="submit" class="btn btn-success" name="mfp-save"
            value="<?php echo __('Save Configuration', 'mfp-languages'); ?>" />
   </div>
 </div>
